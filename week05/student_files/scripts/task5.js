@@ -87,7 +87,7 @@ document.querySelector("#message2").textContent = anotherMessage;
 
 let output = (temples) => {
     temples.forEach((temple) => {
-        let article = document.createElement("article");
+        let templeArticle = document.createElement("article");
 
         let templeName = document.createElement("h3");
         templeName.textContent = temple.templeName;
@@ -102,12 +102,12 @@ let output = (temples) => {
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", temple.templeName);
 
-        article.appendChild(templeName);
-        article.appendChild(location);
-        article.appendChild(dedicated);
-        article.appendChild(img);
+        templeArticle.appendChild(templeName);
+        templeArticle.appendChild(location);
+        templeArticle.appendChild(dedicated);
+        templeArticle.appendChild(img);
 
-        document.getElementById("temples").appendChild(article);
+        document.getElementById("temples").appendChild(templeArticle);
     });
 };
 
@@ -116,7 +116,7 @@ let output = (temples) => {
 // Step 5: Convert your fetch response into a Javascript object ( hint: .json() ). Store this in the templeList variable you declared earlier (Step 1). Make sure the the execution of the code waits here as well until it finishes.
 // Step 6: Finally, call the output function and pass it the list of temples. Execute your getTemples function to make sure it works correctly.
 
-let getTemples = async () => {
+getTemples = async () => {
     const response = await fetch(
         "https://byui-cse.github.io/cse121b-course/week05/temples.json"
     );
