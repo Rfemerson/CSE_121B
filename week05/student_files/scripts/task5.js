@@ -136,7 +136,7 @@ let reset = () => {
 // - Calls the reset function
 // - Sorts the global temple list by the currently selected value of the HTML element with an ID of sortBy
 // - Calls the output function passing in the sorted list of temples
-const sortBy = () => {
+let sortBy = () => {
     reset();
   
     let filter = document.getElementById("sortBy").value;
@@ -146,9 +146,15 @@ const sortBy = () => {
         output(
           templeList.sort((temple1, temple2) => {
             let templeName1 = temple1.templeName.toLowerCase();
+            
             let templeName2 = temple2.templeName.toLowerCase();
-            if (templeName1 < templeName2) return -1;
-            else if (templeName1 > templeName2) return 1;
+
+            if (templeName1 < templeName2) 
+                return -1;
+
+            else if (templeName1 > templeName2) 
+                return 1;
+                
             else return 0;
           })
         );
@@ -157,9 +163,15 @@ const sortBy = () => {
         output(
           templeList.sort((temple1, temple2) => {
             let templeName1 = temple1.templeName.toLowerCase();
+
             let templeName2 = temple2.templeName.toLowerCase();
-            if (templeName1 > templeName2) return -1;
-            else if (templeName1 < templeName2) return 1;
+
+            if (templeName1 > templeName2) 
+                return -1;
+            
+            else if (templeName1 < templeName2)
+                return 1;
+
             else return 0;
           })
         );
