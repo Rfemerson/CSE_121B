@@ -139,9 +139,9 @@ let reset = () => {
 let sortBy = () => {
     reset();
   
-    let filter = document.getElementById("sortBy").value;
+    let sortValue = document.getElementById("sortBy").value;
   
-    switch (filter) {
+    switch (sortValue) {
       case "templeNameAscending":
         output(
           templeList.sort((temple1, temple2) => {
