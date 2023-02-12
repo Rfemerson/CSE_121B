@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>Take Your Time</title>
+</head>
+<body>
+    <header>
+        <a id="logo-link" href="index.html">
+            <img class="logo" src="images/Emerson.jpg" alt="Emerson dev logo">
+        </a>
+        <h1 id="title"></h1>
+    </header>
+    <main>
+        <section>
+            <h2>How long are you spending on your activities?</h2>
+            <form>
+                <ul>
+                    <li>
+                    <label for="nameActivity">Activity Name:</label>
+                    <input type="text" id="nameActivity" name="c" placeholder="Futebool, Studying, Sleeping" required/>
+                    </li>
+                    <li>
+                    <label for="initialHour">Start Time:</label>
+                    <input type="initialHour" id="initialHour" name="initialHour" placeholder="hh:mm AM/PM" required/>
+                    </li>
+                    <li>
+                    <label for="finalHour">End Time:</label>
+                    <input id="finalHour" name="user_message" placeholder="hh:mm AM/PM" required></input>
+                    </li>
+                    <li class="button">
+                        <button type="button" onclick="calculateAndDisplayTime()">Calculate time spent</button>
+                    </li>
+                </ul>
+            </form>
+            <div id="result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Take Your Time Site &copy; 2022 - Emerson Rodrigues</p>
+        <p>
+            <a href="https://rfemerson.github.io/Wdd.130/emerson_personalsite/index.html">Personal Site</a>
+        </p>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="facebook icon">
+            </a>
+            <a href="https://github.com/Rfemerson" target="_blank">
+                <img src="images/github.png" alt="github icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

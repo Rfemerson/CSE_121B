@@ -1,0 +1,174 @@
+#content {
+    max-width: 1600px;
+    margin-top: -8px;
+}
+
+.logo {
+    width: 90px;
+    padding: 5px;
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+#logo-link{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+header {
+    background-color: #011638;
+    color: #EEF0F2;
+    margin-left: -8px;
+    margin-top: -11px;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-right: 100px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #023047;
+}
+
+#feedback {
+    background-color: #023047;
+    color: #EEF7FB;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;   
+}
+.moveDown {
+    margin-top: 3em;
+}
+    
+form {
+    margin: 50px;
+    width: 700px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  
+ul {
+    list-style: none;
+    padding: 100px;
+    margin: 50px;
+}
+
+#nameActivity {
+    margin-bottom: 25px;
+    font-family: var(--paragraph-font);
+    font-size: 1.5em;
+}
+
+#initialHour {
+    margin-bottom: 25px;
+    font-family: var(--paragraph-font);
+    font-size: 1.5em;
+}
+
+#finalHour {
+    margin-bottom: 25px;
+    font-family: var(--paragraph-font);
+    font-size: 1.5em;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    font-size: 1em;
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #023047;
+}
+
+input:focus,textarea:focus {
+    border-color: #023047;
+}
+
+textarea {
+    vertical-align: top;
+    height: 1.5em;
+    
+}
+
+.button {
+    margin-top: 25px;
+    padding-left: 150px;
+    
+}
+
+button {
+    margin-left: 0.5em;
+    text-align: center;
+    background-color: #023047;
+    color: #EEF7FB;
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #FB8500;
+    color: #023047;
+    font-family: var(--paragraph-font);
+}
+
+#result {
+    text-align: center;
+    font-size: 2em;
+}
+
+footer {
+    font-size: 1.2em;
+    background-color: #011638;
+    color: #EEF0F2;
+    padding: 25px 50px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+    margin-top: 100px;
+    font-family: var(--paragraph-font);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    color: #EEF7FB;
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+}
+
+footer .social img {
+    width: 75px;
+    padding: 15px;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+    font-family: var(--paragraph-font);
+} 
